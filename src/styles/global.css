@@ -1,0 +1,119 @@
+/* Global styles */
+
+
+*, h2, h3, a, li a, .second-nav__item a{ 
+    
+    color: #4d48ff;
+    background-color:#dce1f4;
+}
+
+img {
+
+    margin:0;
+}
+
+
+li {
+
+    display: inline-block;
+    margin-right: 1rem; 
+}
+
+a, a:visited {
+    text-decoration: none;
+    position: relative;
+    background: none;
+    text-shadow: none;
+
+  }
+  a:after, a:visited:after {
+    content: '';
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background: #4d48ff;
+    transition: 0.2s;
+  }
+  a:hover:after, a:visited:hover:after {
+    width: 100%;
+  }
+
+  a .social-icon svg {
+
+    
+  }
+  
+
+
+/* About header styles, the typewriter effect */
+
+.about-header__wrapper {
+
+    display:flex; 
+    flex-direction:row;
+}
+
+.about-header__text {
+
+    margin-top: 4rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.ux {
+
+    color: #D0D1D9;
+    padding-right: .2em;
+}
+
+/* Second Nav styles */
+
+.second-nav {
+
+
+
+    margin-left: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
+
+li.second-nav__item a{
+
+    color: #444;
+    text-decoration: none;
+    background-image: none;
+    display: inline-block;
+    text-align: center;
+
+}
+
+/* Subhead styles */
+
+.page-subhead {
+
+    text-align: center;
+}
+
+/* Grid styles */
+
+.grid-wrapper {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-img__wrapper {
+
+    flex-grow: 1;
+    width: 33%;
+    object-fit:cover;
+    height: 33%;
+    display: flex;
+
+}
+
+
+  
