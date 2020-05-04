@@ -9,11 +9,13 @@ const ListLink = props => (
   )
 
 export default () => ( 
-
-<ul className="second-nav">
+  
+<div className="second-nav__wrapper">
+  <ul className="second-nav">
         <ListLink to="/">work</ListLink>
         <li>|</li>
         <ListLink to="/about/">about</ListLink>
-</ul>
+  </ul>
+</div>
 
 )

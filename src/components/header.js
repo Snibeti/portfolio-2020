@@ -2,21 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import '../utils/fontawesome'
 import '../styles/global.css'
-import Typewriter from 'typewriter-effect';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faGithubAlt, faInstagram, faArtstation } from '@fortawesome/free-brands-svg-icons'
-import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 
-const styles = {
-
-  Typewriter__wrapper: {
-
-      display: 'inline-block'
-
-  }
- 
-
-}
 
 export default () => (
     <header style={{ marginBottom: `1.5rem` }}>
@@ -30,24 +18,5 @@ export default () => (
         <li><a href="#" ><FontAwesomeIcon icon={faArtstation}/></a></li>
       </ul>
 
-    <div className= 'about-header__wrapper'>
-    <div className='about-header__text ux'>UX</div>
-    <div className='about-header__text'>
-          <Typewriter 
-            styles= {styles.Typewriter__wrapper}
-            options={{
-                strings: ['Designer', 'Developer', 'Researcher'],
-                autoStart: true,
-                loop:true,
-                deleteSpeed: 30
-            }}
-            onInit={(typewriter) => {
-            typewriter.typeString('')
-            .pauseFor(1000)
-            .start();
-            }}
-          />
-    </div>
-    </div>
     </header>
 )

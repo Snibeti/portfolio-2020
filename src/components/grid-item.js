@@ -1,10 +1,18 @@
 import React from "react"
+import { Link } from "gatsby"
 import "../styles/global.css"
 
-export default () => (
+const ListLink = props => (
+      
+      <Link to={props.to}>{props.children}</Link>
+  )
 
+const GridItem = props => (
     <div className="grid-img__wrapper">
-        <img src="https://source.unsplash.com/random/600x600"></img>
+      <Link to={props.to}>
+        <h4>{props.text}</h4>
+        <img src={props.imgSrc} alt={props.imgAlt} />
+      </Link>
     </div>
-
-)
+ );
+ export default GridItem;
