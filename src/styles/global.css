@@ -12,6 +12,11 @@ h2, h3, a, li a, .second-nav__item a{
     text-align: center;
 }
 
+h2 {
+
+    font-size: 2em;
+}
+
 img {
 
     margin:0;
@@ -116,6 +121,7 @@ li.second-nav__item a{
     flex-wrap: wrap;
     text-align: left;
     padding-top: 3em;
+    position: relative;
 }
 
 .grid-img__wrapper a {
@@ -126,13 +132,15 @@ li.second-nav__item a{
 .grid-img__wrapper h4 {
 
     position: absolute;
-    top: 80%;
-    left: 35%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background-color: transparent;
     margin-top: 0;
     color: #dce1f4;
-    opacity: 0;
+    opacity: 1;
+    transition: transform 1s ease;
+
 }
 
 .grid-img__wrapper:hover h4 {
@@ -145,11 +153,85 @@ li.second-nav__item a{
     flex-grow: 1;
     width: 33%;
     object-fit:cover;
-    height: 33%;
+    height: 300px;
     display: flex;
-    background-color: transparent;
+    overflow: hidden;
+    /* background-color: rgb(187, 191, 220); */
 
 }
 
+.grid-img__wrapper img {
 
-  
+    transition: transform 1s ease;
+}
+
+.grid-img__wrapper img:hover {
+
+    transform: scale(1.5);
+    mix-blend-mode: normal;
+}
+
+
+
+/* Work pages with class prefix w- */
+
+.w-img-banner {
+
+    display: inline-block;
+    background-image: 
+        linear-gradient(0deg, rgb(152, 158, 205) 30%, 
+        rgba(139,145,189,0.10) 100%);
+    margin: 0;
+    padding: 0;
+    height: 250px;
+    position: relative;
+}
+
+.w-img-banner img {
+
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    mix-blend-mode: color-burn;
+    position: relative;
+    
+
+}
+
+.w-img-banner h5 {
+
+    font-size: 3em;
+    position: absolute;
+    bottom: 0;
+    left: 3%;   
+                                 
+    background : transparent;
+    color: #dce1f4;
+    mix-blend-mode: overlay;
+
+}
+
+/* footer */
+
+
+.footer p {
+
+
+    padding: 0;
+    margin: 0;
+    font-size: .8em;
+
+}
+
+.footer p a {
+
+    text-decoration: underline;
+    transition: .3s ease;
+    margin: 0 3px 0 3px;
+}
+
+.footer p a:hover {
+
+    background-color: #4d48ff;
+    color: white;
+}

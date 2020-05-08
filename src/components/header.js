@@ -13,7 +13,7 @@ export default () => (
       </Link>
       <ul style={{ listStyle: `none`, float: `right` }}>
         <li><a className='social-icon' target="_blank" href="https://www.linkedin.com/in/sarah-bray-0b910b11b/"><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
-        <li><a target="_blank" href="#"><FontAwesomeIcon icon={faGithubAlt}/></a></li>
+        <li><a target="_blank" href="https://github.com/Snibeti"><FontAwesomeIcon icon={faGithubAlt}/></a></li>
         <li><a target="_blank" href="#"><FontAwesomeIcon icon={faInstagram}/></a></li> 
         <li><a href="#" ><FontAwesomeIcon icon={faArtstation}/></a></li>
       </ul>
